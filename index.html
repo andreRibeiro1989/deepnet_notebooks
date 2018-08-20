@@ -1,7 +1,11 @@
 <head><script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.12.0"> </script>
 
 <script>
-          var img = new Image("5.jpeg");
+          function ImageItem(src) {
+            this.image = new Image();
+            this.src = src.
+          }
+          var img = new imageItem("5.jpeg")
 
           async functbion loadModel(){
               model = await tf.loadModel('js_model/model.json')
