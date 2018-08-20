@@ -7,9 +7,9 @@
           }
           var img = new imageItem("5.jpeg")
 
-          async functbion loadModel(){
+          async function loadModel(){
               model = await tf.loadModel('js_model/model.json')
-              y = model.predict(tf.zeros(img))
+              y = model.predict(tf.zeros([28,28,1]))
               document.getElementById('out').innerHTML = y.dataSync()[0]
           }
           loadModel()
